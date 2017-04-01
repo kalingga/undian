@@ -3,6 +3,5 @@ Aplikasi ini mengadopsi dari aplikasi yang diterapkan pada MUM (Mikrotik User Me
 
 ![Alt text](screenshot.png "Screenshot")
 
-### thanks
-Mikrotik Indonesia
-aj
+### credit
+Mikrotik Indonesia, @aj
