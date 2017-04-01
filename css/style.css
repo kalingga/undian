@@ -1,0 +1,83 @@
+/**********************************************************************************
+
+  Tutorial Name: jQuery-Ajax Loader
+  Project Description: A simple way how you can display contents with Loader using jQuery and AJAX 
+  File Name: style.css
+  Author: Sam Norton
+  
+**********************************************************************************/
+
+
+body {
+    background:#27ae60;
+    text-align:center;
+    font-family:'Product Sans';
+    color: #fff;
+}
+
+.container {
+    margin:70px auto
+}
+
+h1 {
+    text-align:center;
+    font-family:'Product Sans';
+    color:#fff;
+    font-weight:800;
+    font-size:50px
+}
+
+h3 {
+    text-align:center;
+    font-family:'Product Sans';
+    color:#eaeaea;
+    font-weight:400;
+    font-size:25px
+}
+
+p {
+    text-align:center;
+    font-family:'Product Sans';
+    color:#fff;
+    font-weight:600;
+    font-size:18px
+}
+
+a {
+    color:#126133
+}
+
+button#load {
+    padding:0 3em;
+    outline:none;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:1em;
+    line-height:4;
+    overflow:hidden;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+    text-align:center;
+    cursor:pointer;
+    margin:15px auto;
+    display:block
+}
+
+#loader-img {
+    margin:0 auto;
+    display:block
+}
+
+#content {
+    margin:0 auto;
+    padding:3em;
+    text-align:center;
+    color:#fff;
+    font-family:'Product Sans';
+    font-size:18px;
+    font-weight:600;
+    height:289px;
+}
