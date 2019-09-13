@@ -22,6 +22,7 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?code=arni"></script>
+	<script src="js/keyframes.min.js"></script>
 	<script type="text/javascript">
 		var timeout = setInterval(sApi, 5000); 
 		function sApi() {
@@ -60,15 +61,22 @@
 
 <div class="container">
 
-
-<div id="content">
-	
-</div>
-<button id="load">Hajar</button>
-Peserta sudah diundi ada <span id="tS"></span> dari <span id="tT"></span> dan sisa <span id="tB"></span> Peserta
+	<div class="bg"></div>
+	<div id="content">
+		
+	</div>
+	<button id="load">Hajar</button>
+	Peserta sudah diundi ada <span id="tS"></span> dari <span id="tT"></span> dan sisa <span id="tB"></span> Peserta
 </div>
 
 <script>
+	setInterval(function(){
+	var images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg', 'bg4.jpg', 'bg5.jpg'];
+	$('.bg').css({'background': 'url(../images/' + images[Math.floor(Math.random() * images.length)] + ') no-repeat center center fixed','background-size':'cover', 'animation': 'fade 2s linear','opacity':'1'});
+	}, 5000);
+	
+
+	
 $('#load').click(function () {
     // Adding loading GIF
     $('#content').html('<br><br><img src="images/load.gif" id="loader-img" align="center"><br>Loading...');
@@ -86,8 +94,10 @@ $('#load').click(function () {
                 $('#content').html('<h1>' + loader.nama + '</h1>' + '<h3>' +loader.organisasi+ '</h3><h3>' +loader.email+'</h3>').addClass('lucky');
             }, 3000);
         }
-    });
+	});
+	
 });
+
 </script>
 
 
